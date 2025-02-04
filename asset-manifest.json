@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-portolio/static/css/main.ac15413e.css",
+    "main.js": "/my-portolio/static/js/main.65df7cf6.js",
+    "static/media/header.jpg": "/my-portolio/static/media/header.2d77b97b5cae5ec76091.jpg",
+    "static/media/cv.pdf": "/my-portolio/static/media/cv.eb7e7933658a4be6df96.pdf",
+    "static/media/logo.jpg": "/my-portolio/static/media/logo.d18a3f4e97c89b758fbe.jpg",
+    "static/media/about.jpg": "/my-portolio/static/media/about.af04a0940c5f58c8e5fe.jpg",
+    "static/media/project9.jpg": "/my-portolio/static/media/project9.7e10b78179ee665298cd.jpg",
+    "static/media/project6.jpg": "/my-portolio/static/media/project6.4e8ab78eb40a0f03bc88.jpg",
+    "static/media/project7.jpg": "/my-portolio/static/media/project7.4389651d5816bb277c4a.jpg",
+    "static/media/project8.jpg": "/my-portolio/static/media/project8.16ed43794953534af05c.jpg",
+    "static/media/project4.jpg": "/my-portolio/static/media/project4.9e2e36250226a4ebb82b.jpg",
+    "static/media/project2.jpg": "/my-portolio/static/media/project2.d4ca506cbd979283014a.jpg",
+    "static/media/project1.jpg": "/my-portolio/static/media/project1.5cec46bd193a7eb80f22.jpg",
+    "static/media/project3.jpg": "/my-portolio/static/media/project3.746fa9dfecfb9e491ef1.jpg",
+    "static/media/project5.jpg": "/my-portolio/static/media/project5.fdd0c6a0d639a9c75455.jpg",
+    "index.html": "/my-portolio/index.html",
+    "main.ac15413e.css.map": "/my-portolio/static/css/main.ac15413e.css.map",
+    "main.65df7cf6.js.map": "/my-portolio/static/js/main.65df7cf6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac15413e.css",
+    "static/js/main.65df7cf6.js"
+  ]
+}
