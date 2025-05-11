@@ -1,10 +1,10 @@
 # `portfolio-site`
 
-> A crisp, performant, and modular portfolio built with React + Tailwind — because you're not here to impress *everyone*, just the right ones.
+> A React-based portfolio showcasing my bio, experience, projects, and design skills with a focus on clarity and structure.
 
 ---
 
-## 📁 Project Structure (Clean AF™)
+## 📁 Project Structure
 
 ```
 src/
@@ -40,7 +40,7 @@ src/
 
 ---
 
-## 🛠 Usage
+## Usage
 
 ```bash
 git clone https://github.com/fahaad-abbadi/portfolio-site.git
@@ -58,7 +58,7 @@ npm run build
 
 ---
 
-## 🔍 Custom CSS Tokens
+## Custom CSS Tokens
 
 Inside `index.css`, you're already doing pro-level HSL color theming:
 
@@ -74,9 +74,9 @@ Inside `index.css`, you're already doing pro-level HSL color theming:
 
 ---
 
-## 💼 Live Demo
+## Live Demo
 
-> [🌐 See it deployed on GitHub Pages](https://fahaad-abbadi.github.io/portfolio-site)
+> [See it deployed on GitHub Pages](https://fahaad-abbadi.github.io/portfolio-site)
 
 ---
 
