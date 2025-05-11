@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# `portfolio-site`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A crisp, performant, and modular portfolio built with React + Tailwind — because you're not here to impress *everyone*, just the right ones.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📁 Project Structure (Clean AF™)
 
-### `npm start`
+```
+src/
+├── assets/            # Static assets (images, SVGs, etc.)
+├── components/        # Reusable atomic UI components
+│   ├── Card.jsx       # A sexy display block for projects/info
+│   └── Modal.jsx      # Reusable dialog/modal
+├── sections/          # Logical page blocks
+│   ├── about/         # Bio, intro, the “hey there” stuff
+│   ├── contact/       # Form or socials
+│   ├── faqs/          # Accordion / Q&A section
+│   ├── floating-nav/  # Floating navigation component
+│   ├── footer/        # Obvious
+│   ├── header/        # Topmost hero section
+│   ├── navbar/        # Main navigation bar
+│   ├── portfolio/     # Project showcase section
+│   ├── skills/        # Tech stack visuals
+│   └── testimonials/  # Client feedback or fake flex 
+├── App.jsx            # Root component orchestrator
+├── index.js           # React DOM entry point
+└── index.css          # Base styles & theme tokens (CSS vars)
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Purpose       | Tech                                                |
+|--------------|------------------------------------------------------|
+| Framework     | [React](https://reactjs.org/)                       |
+| Styling       | Vanilla CSS
+| Extras        | Modular file structure, responsive layout           |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/fahaad-abbadi/portfolio-site.git
+cd portfolio-site
+npm install
+npm run dev  # or npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dev runs at `http://localhost:3000`  
+Build it for prod with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔍 Custom CSS Tokens
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Inside `index.css`, you're already doing pro-level HSL color theming:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```css
+:root {
+  --primary-hue: 270;
+  --black-lightness: 15%;
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> These make theme switches, light/dark toggles, or dynamic theming child's play.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💼 Live Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> [🌐 See it deployed on GitHub Pages](https://fahaad-abbadi.github.io/portfolio-site)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## TODO / Feature Ideas (for MVP++)
 
-### Analyzing the Bundle Size
+- [ ] Add animations (Framer Motion / GSAP)
+- [ ] Dark mode toggle 
+- [ ] Typewriter effect on hero?
+- [ ] Skeleton loading or suspense fallback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Testing (If you go pro mode)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Add React Testing Library + Cypress or Playwright later.  
+Testing suggestion for `Card.jsx`:
 
-### Advanced Configuration
+```js
+render(<Card title="Test Project" />);
+expect(screen.getByText("Test Project")).toBeInTheDocument();
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Not open for contributions right now.  
+But if you’re a recruiter or engineer vibing with this — let's talk.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+MIT — you can use this, but cloning the design pixel-by-pixel without adding your own flair is just... mid.
